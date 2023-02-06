@@ -113,6 +113,14 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias c="clear"
+alias pa="php artisan"
+alias pas="php artisan serve"
+alias pam="php artisan migrate"
+alias pat="php artisan tinker"
+alias ga.="git add ."
+alias gcm="git commit -m"
+alias gpo="git push origin"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
