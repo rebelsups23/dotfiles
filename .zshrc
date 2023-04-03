@@ -113,6 +113,19 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+## Alias section
+alias cp="cp -i"                                                # Confirm before overwriting something
+alias df='df -h'                                                # Human-readable sizes
+alias free='free -m'                                            # Show sizes in MB
+alias gitu='git add . && git commit && git push'
+
+alias nf="neofetch"
+alias httpds="sudo systemctl start httpd"
+alias httpdst="sudo systemctl status httpd"
+alias httpdr="sudo systemctl restart httpd"
+
+alias zipher="zip --password xxx files.zip files/* && rm -rf files/*"
+
 alias c="clear"
 alias pa="php artisan"
 alias pas="php artisan serve"
@@ -121,6 +134,8 @@ alias pat="php artisan tinker"
 alias ga.="git add ."
 alias gcm="git commit -m"
 alias gpo="git push origin"
+alias pam:f="php artisan migrate:fresh"
+alias pads="php artisan db:seed"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
