@@ -120,9 +120,25 @@ alias free='free -m'                                            # Show sizes in 
 alias gitu='git add . && git commit && git push'
 
 alias nf="neofetch"
-alias httpds="sudo systemctl start httpd"
-alias httpdst="sudo systemctl status httpd"
-alias httpdr="sudo systemctl restart httpd"
+alias httpd:s="sudo systemctl start httpd"
+alias httpd:st="sudo systemctl status httpd"
+alias httpd:r="sudo systemctl restart httpd"
+
+alias os:s="sudo systemctl start openswan"
+alias os:st="sudo systemctl status openswan"
+alias os:r="sudo systemctl restart openswan"
+
+alias xl2:s="sudo systemctl start xl2tpd"
+alias xl2:st="sudo systemctl status xl2tpd"
+alias xl2:r="sudo systemctl restart xl2tpd"
+
+alias ipsec:up:at-vpn="sudo ipsec auto --up atvpn"
+
+alias at-vpn:connect="sudo sh -c 'echo \"c vpn-connection\" > /var/run/xl2tpd/l2tp-control'"
+alias at-vpn:disconnect="sudo sh -c 'echo \"d vpn-connection\" > /var/run/xl2tpd/l2tp-control'"
+
+alias ipsec:st="sudo ipsec auto --status"
+alias iproute:add:at="sudo ip route add 45.33.34.110 via 192.168.42.10 dev ppp0"
 
 alias zipher="zip --password xxx files.zip files/* && rm -rf files/*"
 
