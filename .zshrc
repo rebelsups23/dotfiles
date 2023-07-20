@@ -118,6 +118,7 @@ alias cp="cp -i"                                                # Confirm before
 alias df='df -h'                                                # Human-readable sizes
 alias free='free -m'                                            # Show sizes in MB
 alias gitu='git add . && git commit && git push'
+alias gpull='git pull origin'
 
 alias nf="neofetch"
 alias httpd:s="sudo systemctl start httpd"
@@ -138,7 +139,8 @@ alias at-vpn:connect="sudo sh -c 'echo \"c vpn-connection\" > /var/run/xl2tpd/l2
 alias at-vpn:disconnect="sudo sh -c 'echo \"d vpn-connection\" > /var/run/xl2tpd/l2tp-control'"
 
 alias ipsec:st="sudo ipsec auto --status"
-alias iproute:add:at="sudo ip route add 45.33.34.110 via 192.168.42.10 dev ppp0"
+alias iproute:add:at:10="sudo ip route add 45.33.34.110 via 192.168.42.10 dev ppp0"
+alias iproute:add:at:11="sudo ip route add 45.33.34.110 via 192.168.41.11 dev ppp0"
 
 alias zipher="zip --password xxx files.zip files/* && rm -rf files/*"
 
@@ -152,6 +154,8 @@ alias gcm="git commit -m"
 alias gpo="git push origin"
 alias pam:f="php artisan migrate:fresh"
 alias pads="php artisan db:seed"
+
+alias cdw="cd /mnt/stuffs/WORK"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
