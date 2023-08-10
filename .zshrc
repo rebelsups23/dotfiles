@@ -140,7 +140,7 @@ alias at-vpn:disconnect="sudo sh -c 'echo \"d vpn-connection\" > /var/run/xl2tpd
 
 alias ipsec:st="sudo ipsec auto --status"
 alias iproute:add:at:10="sudo ip route add 45.33.34.110 via 192.168.42.10 dev ppp0"
-alias iproute:add:at:11="sudo ip route add 45.33.34.110 via 192.168.41.11 dev ppp0"
+alias iproute:add:at:11="sudo ip route add 45.33.34.110 via 192.168.42.11 dev ppp0"
 
 alias zipher="zip --password xxx files.zip files/* && rm -rf files/*"
 
